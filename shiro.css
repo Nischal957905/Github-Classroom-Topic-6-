@@ -2,10 +2,6 @@ body{
     background-color:darkgrey;
     margin:0;
 }
-.mura1{
-	grid-area:header;
-	height:90px;
-}
 nav{
 	background-color:black;
 	height:100%;
@@ -34,7 +30,11 @@ nav ul li a{
 	font-weight:bold;
 	font-style:italic;	
 }
-.mura2{
+.mura1 ,.plus1{
+	grid-area:header;
+	height:90px;
+}
+.mura2 , .plus2{
 	grid-area:body;
 	margin-top:20px;
 	margin-left:20px;
@@ -44,7 +44,7 @@ nav ul li a{
 	border:solid black 2px;
 	border-radius:10px;
 }
-.mura3{
+.mura3 , .plus3{
 	grid-area:filler;
 	background-color: silver;
 	border:solid black 2px;
@@ -56,7 +56,7 @@ nav ul li a{
 	width:955px;
 	height:400px;
 }
-.mura4{
+.mura4 , .plus4{
 	grid-area:footer;
     height:55px;
     background-color:silver;
@@ -65,7 +65,7 @@ nav ul li a{
     margin-right:15px;
     margin-left:20px;
 }
-.deku{
+.deku ,.mygrids{
 	display:grid;
 	grid:
 	'header header header header header'
@@ -75,6 +75,28 @@ nav ul li a{
 	background-color:darkgrey;
 	height:100%;
 	position:relative;
+}
+.mypic{
+	background-color:lightgrey;
+	height:300px;
+	margin:17px;
+	width:220px;
+} 
+h1{
+	color:black;
+}
+.pixiv{
+	display:flex;
+	background-color:lightgrey;
+	height:350px;
+	margin:5px;
+	width:300px;
+	float:left;
+}
+.pixiv > h2 {
+	align-self: center;
+    text-align: center;
+    width: 100%;
 }
 }
 • @media screen and (max-width : 500px){ body{ 

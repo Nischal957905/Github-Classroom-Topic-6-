@@ -1,109 +1,144 @@
 body{
-    background-color:darkgrey;
+    background-color:#696969;
     margin:0;
+    padding: 0;
+}
+.layout{
+	display:grid;
+	height: 100vh;
+	grid-template-columns:250px 1fr 1fr 1fr;
+	grid-template-rows: 100px 1fr 1fr 55px;
+	grid-template-areas:
+	    "nav nav nav nav"
+		"sidebar content content content"
+		"sidebar content content content"
+		"sidebar footer footer footer";
+	grid-gap:0.3rem;	
 }
 nav{
 	background-color:black;
-	height:100%;
-	width:100%;
-	padding:0;
+	grid-area:nav;
 }
-label.aka{
-	color:white;
-	font-style:italic;
-	font-weight:bold;
-	font-size:40px;
-	line-height:100px;
-	padding:0 100px;
-}
-nav ul{
-	float:right;
-	margin-right:20px;
-}
-nav ul li{
-    display:inline-block;
-    line-height:100px;
-    margin:0 5px;
-}
-nav ul li a{
-	color:white;
-	font-weight:bold;
-	font-style:italic;	
-}
-.mura1 ,.plus1{
-	grid-area:header;
-	height:90px;
-}
-.mura2 , .plus2{
-	grid-area:body;
-	margin-top:20px;
-	margin-left:20px;
-	height:490px;
-	width:250px;
+#sidebar{
 	background-color:silver;
+	grid-area:sidebar;
+	border:solid black 2px;
+	border-radius: 10px;
+	margin-left:10px;
+}
+#content{
+	background-color:silver;
+	grid-area:content;
 	border:solid black 2px;
 	border-radius:10px;
+	margin-right:10px;
 }
-.mura3 , .plus3{
-	grid-area:filler;
-	background-color: silver;
-	border:solid black 2px;
-	float:right;
-	margin-right:15px;
-	margin-top:30px;
-	margin-left:20px;
-	border-radius:10px;
-	width:955px;
-	height:400px;
-}
-.mura4 , .plus4{
+footer{
+	background-color:silver;
 	grid-area:footer;
-    height:55px;
-    background-color:silver;
-    border:solid black 2px;
+	border:solid black 2px;
     border-radius:10px;
-    margin-right:15px;
-    margin-left:20px;
+    margin-right:10px;
 }
-.deku ,.mygrids{
-	display:grid;
-	grid:
-	'header header header header header'
-	'body filler filler filler filler'
-	'body footer footer footer footer';
-	grid-gap:8px;
-	background-color:darkgrey;
+ nav{
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding: 0 5%;
+	height:95px;
+}
+nav .aka{
+	float: left;
+	width: 40%;
 	height:100%;
-	position:relative;
+	display: flex;
+	align-items: center;
+	font-size:40px;
+	color:white;
+	font-weight: bold;
+	font-style: italic;
 }
-.mypic{
-	background-color:lightgrey;
-	height:300px;
-	margin:17px;
-	width:220px;
-} 
-h1{
-	color:black;
+nav .whole{
+	float: right;
+	padding: 0;
+	margin: 0;
+	width: 60%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
-.pixiv{
-	display:flex;
-	background-color:lightgrey;
-	height:350px;
-	margin:5px;
-	width:300px;
-	float:left;
+nav .whole li{
+	list-style: none;
 }
-.pixiv > h2 {
-	align-self: center;
-    text-align: center;
-    width: 100%;
+nav .whole a{
+	display: block;
+	padding: 1em;
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
 }
+#nav-toggle{
+	position: absolute;
+	top: -100px;
 }
-• @media screen and (max-width : 500px){ body{ 
-background : red; 
-} 
-• }
-
-
-
-
+nav .burgericon {
+    display: none;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+nav .burgericon .straight{
+	width: 30px;
+	height: 5px;
+	margin: 5px;
+	background-color: gold;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+@media screen and (max-width : 500px){ 
+    nav .aka {
+		float: none;
+		width: auto;
+		justify-content: center;
+	}
+	nav .whole {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgba(0,0,0,.8);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+	}
+	nav .whole a {
+		font-size: 20px;
+	}
+	nav :checked ~ .whole {
+		bottom: 0;
+	}
+	nav .burgericon {
+		display: block;
+	}
+	nav :checked ~ .burgericon .straight:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .burgericon .straight:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+	nav :checked ~ .burgericon .straight:nth-child(2) {
+		opacity: 0;
+	}	
+}

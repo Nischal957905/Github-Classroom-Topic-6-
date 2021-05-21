@@ -92,7 +92,8 @@ nav .burgericon {
 	top: 50%;
 	transform: translateY(-50%);
 }
-nav .burgericon .straight{
+nav .burgericon span{
+	display: block;
 	width: 30px;
 	height: 5px;
 	margin: 5px;
@@ -132,13 +133,13 @@ nav .burgericon .straight{
 	nav .burgericon {
 		display: block;
 	}
-	nav :checked ~ .burgericon .straight:nth-child(1) {
+	nav :checked ~ .burgericon span:nth-child(1) {
 		transform: translateY(10px) rotate(225deg);
 	}
-	nav :checked ~ .burgericon .straight:nth-child(3) {
+	nav :checked ~ .burgericon span:nth-child(3) {
 		transform: translateY(-10px) rotate(-225deg);
 	}
-	nav :checked ~ .burgericon .straight:nth-child(2) {
+	nav :checked ~ .burgericon span:nth-child(2) {
 		opacity: 0;
 	}	
 }

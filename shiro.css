@@ -26,6 +26,19 @@ nav{
 	border-radius: 10px;
 	margin-left:10px;
 }
+#sidebar .zero{
+	text-align:center;
+	margin:4px;
+	border:solid 2px black;
+}
+#sidebar .hero{
+	border-top:solid black 5px;
+}
+#sidebar h1{
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;
+}
 #content{
 	background-color:silver;
 	grid-area:content;
@@ -33,12 +46,27 @@ nav{
 	border-radius:10px;
 	margin-right:10px;
 }
+#content h2{
+	text-align:center;
+	font-style:italic;
+	font-size:30px;
+	margin:10px 100px 10px 100px;
+	border:solid black 2px;
+}
+#content p{
+	border-top:solid black 5px;
+}
 footer{
 	background-color:silver;
 	grid-area:footer;
 	border:solid black 2px;
     border-radius:10px;
     margin-right:10px;
+}
+footer p{
+	font-size:20px;
+	text-align:center;
+	font-style:italic;
 }
  nav{
 	position: fixed;

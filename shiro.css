@@ -20,29 +20,52 @@ nav{
 	grid-area:nav;
 }
 #sidebar{
-	background-color:silver;
 	grid-area:sidebar;
-	border:solid black 2px;
+	border:solid white 2px;
 	border-radius: 10px;
 	margin-left:10px;
+	background:black;
 }
 #sidebar .zero{
 	text-align:center;
 	margin:4px;
-	border:solid 2px black;
+	border:solid 2px white;
+	font-style:italic;
+	color:lime;
 }
 #sidebar .hero{
-	border-top:solid black 5px;
+	border-top:solid white 5px;
+	padding:50px 10px 10px 10px;
+	text-align:center;
+	font-style:italic;
+	color:orange;
 }
 #sidebar h1{
 	font-size:20px;
 	font-weight:bold;
 	text-align:center;
+	color:white;
+}
+#sidebar .kanata{
+	background:gold;
+	height:250px;
+	width:200px;
+	border:solid white 2px;
+	margin:20px 10px 0px 14px;
+	text-align:center;
+	color:red;
+	border-radius:5px;
+}
+#sidebar .astra{
+	border-top:solid white 5px;
+	color:white;
+	margin:20px 10px 0px 14px;
+	text-align:center;
 }
 #content{
-	background-color:silver;
+	background-color:black;
 	grid-area:content;
-	border:solid black 2px;
+	border:solid white 2px;
 	border-radius:10px;
 	margin-right:10px;
 }
@@ -51,15 +74,21 @@ nav{
 	font-style:italic;
 	font-size:30px;
 	margin:10px 100px 10px 100px;
-	border:solid black 2px;
+	border:solid white 2px;
+	color:white;
 }
 #content p{
-	border-top:solid black 5px;
+	border-top:solid white 5px;
+	font-style:italic;
+	color:red;
+	text-align:right;
+	padding:300px 20px 0px 0px;
+	background:black;
 }
 footer{
-	background-color:silver;
+	background-color:black;
 	grid-area:footer;
-	border:solid black 2px;
+	border:solid white 2px;
     border-radius:10px;
     margin-right:10px;
 }
@@ -67,6 +96,7 @@ footer p{
 	font-size:20px;
 	text-align:center;
 	font-style:italic;
+	color:gold;
 }
  nav{
 	position: fixed;
@@ -108,6 +138,9 @@ nav .whole a{
 	font-weight: bold;
 	color: white;
 	text-decoration: none;
+}
+nav .whole li a:hover{
+	background-color:green;
 }
 #nav-toggle{
 	position: absolute;

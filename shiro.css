@@ -133,7 +133,91 @@ footer{
 	border-top:solid lightgreen 2px;
 	text-align:center;
 }
-@media screen and (max-width : 600px){  
+.lays{
+	margin-top:95px;
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows:0.8fr 8fr 1fr;
+	grid-template-areas:
+	"bar"
+	"init"
+	"foot";
+}
+#view{
+	grid-area:bar;
+	background-color:aliceblue;
+	border-bottom:solid grey 2px;
+}
+#view .kirito{
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+}
+#view .kirito li{
+	list-style:none;
+}
+#slc{
+	grid-area:init;
+	background-color:mintcream;
+}
+#slc{
+	display:grid;
+	grid-gap: 50px;
+	padding:20px;
+	grid-template-columns: repeat(3, 1fr);
+}
+#slc .pole{
+	background-color: mintcream;
+}
+#slc .unique{
+	background:gold;
+	height:230px;
+	width:200px;
+	border:solid silver 2px;
+	margin-left:40px;
+	text-align:center;
+	color:red;
+	border-radius:5px;
+}
+#slc .rare{
+	background:gold;
+	height:230px;
+	width:200px;
+	margin-left: 40px;
+	border:solid silver 2px;
+	text-align:center;
+	color:red;
+	border-radius:5px;
+}
+#slc .epic{
+	background:gold;
+	height:230px;
+	width:200px;
+	margin-left: 40px;
+	border:solid silver 2px;
+	text-align:center;
+	color:red;
+	border-radius:5px;	
+}
+#slc h1,h2,h3{
+	font-size: 20px;
+	margin-left:40px;
+}
+#slc .astra{
+	text-align: center;
+}
+#oli{
+	grid-area:foot;
+	background-color:palegreen;
+	border-top:solid lightgreen 2px;
+	text-align:center;
+}
+@media screen and (max-width : 600px){
+    #slc{
+    	display: grid;
+    	padding: 16px;
+    	grid-template-columns: repeat(1, 1fr);
+    }	
     nav .aka {
 		float: none;
 		width: auto;
@@ -198,6 +282,5 @@ footer{
 	}
     .layout{
 		margin-top:95px;
-		display:
 	}
 }

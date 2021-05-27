@@ -1,46 +1,12 @@
 body{
-    background-color:#696969;
+    background-color:white;
     margin:0;
     padding: 0;
 }
-.layout{
-	display:grid;
-	height: 100vh;
-	grid-template-columns:250px 1fr 1fr 1fr;
-	grid-template-rows: 100px 1fr 1fr 55px;
-	grid-template-areas:
-	    "nav nav nav nav"
-		"sidebar content content content"
-		"sidebar content content content"
-		"sidebar footer footer footer";
-	grid-gap:0.3rem;	
-}
 nav{
 	background-color:black;
-	grid-area:nav;
 }
-#sidebar{
-	background-color:silver;
-	grid-area:sidebar;
-	border:solid black 2px;
-	border-radius: 10px;
-	margin-left:10px;
-}
-#content{
-	background-color:silver;
-	grid-area:content;
-	border:solid black 2px;
-	border-radius:10px;
-	margin-right:10px;
-}
-footer{
-	background-color:silver;
-	grid-area:footer;
-	border:solid black 2px;
-    border-radius:10px;
-    margin-right:10px;
-}
- nav{
+nav{
 	position: fixed;
 	z-index: 10;
 	left: 0;
@@ -81,18 +47,22 @@ nav .whole a{
 	color: white;
 	text-decoration: none;
 }
+nav .whole li a:hover{
+	background-color:green;
+}
 #nav-toggle{
-	position: absolute;
-	top: -100px;
+	float:center;
+	top: -100px;	
+    display:none;	
 }
 nav .burgericon {
-    display: none;
-	position: absolute;
-	right: 5%;
-	top: 50%;
+	display:none;
+    float:right;
+	margin:-50px -5px 20px 0px;
 	transform: translateY(-50%);
 }
-nav .burgericon .straight{
+nav .burgericon span{
+	display: block;
 	width: 30px;
 	height: 5px;
 	margin: 5px;
@@ -100,7 +70,70 @@ nav .burgericon .straight{
 	border-radius: 3px;
 	transition: all .3s ease-in-out;
 }
-@media screen and (max-width : 500px){ 
+.layout{
+	margin-top:95px;
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows:0.8fr 8fr 1fr;
+	grid-template-areas:
+	"sidebar"
+	"content"
+	"footer";
+}
+#navit{
+	grid-area:sidebar;
+	background-color:aliceblue;
+	border-bottom:solid grey 2px;
+}
+#navit .one{
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+}
+#navit .one li{
+	list-style:none;
+}
+#content{
+	grid-area:content;
+	background-color:mintcream;
+}
+#content h1{
+	font-size:30px;
+	font-weight:bold;
+	word-spacing:4px;
+	float:left;
+	margin:100px 0px 0px 100px;
+}
+#content p{
+	float:left;
+	margin:20px 400px 20px 100px;
+}
+#content .jjjk{
+	margin:20px 0px 0px 100px;
+}
+#content .mybtn{
+	float:left;
+	font-style:italic;
+	background-color:green;
+	border:none;
+    color: white;
+    padding:15px 32px;
+    text-align:center;
+    text-decoration:none;
+    display:inline-block;
+	margin-left:100px;
+    font-size:16px;
+    margin:4px 2px;
+    cursor:pointer;
+	border-radius: 8px;
+}
+footer{
+	grid-area:footer;
+	background-color:palegreen;
+	border-top:solid lightgreen 2px;
+	text-align:center;
+}
+@media screen and (max-width : 600px){  
     nav .aka {
 		float: none;
 		width: auto;
@@ -132,13 +165,39 @@ nav .burgericon .straight{
 	nav .burgericon {
 		display: block;
 	}
-	nav :checked ~ .burgericon .straight:nth-child(1) {
+	nav :checked ~ .burgericon span:nth-child(1) {
 		transform: translateY(10px) rotate(225deg);
 	}
-	nav :checked ~ .burgericon .straight:nth-child(3) {
+	nav :checked ~ .burgericon span:nth-child(3) {
 		transform: translateY(-10px) rotate(-225deg);
 	}
-	nav :checked ~ .burgericon .straight:nth-child(2) {
+	nav :checked ~ .burgericon span:nth-child(2) {
 		opacity: 0;
-	}	
+	}
+	#navit{
+		width:100vw;
+	}
+	#content{
+		width:100vw;
+	}
+	#content h1{
+		margin:15px 0px 8px 4px;
+		font-size:20px;
+	}
+	#content p{
+		margin:0px 10px 0px 4px;
+		font-size:15px;
+		padding:5px;
+	}
+	#content .jjjk{
+		margin:15px 0px 0px 4px;
+	}
+	footer{
+		width:100vw;
+		font-size:15px;
+	}
+    .layout{
+		margin-top:95px;
+		display:
+	}
 }

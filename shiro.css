@@ -51,7 +51,6 @@ nav .whole li a:hover{
 	background-color:green;
 }
 #nav-toggle{
-	float:center;
 	top: -100px;	
     display:none;	
 }
@@ -170,7 +169,7 @@ footer{
 	background-color: mintcream;
 }
 #slc .unique{
-	background:gold;
+	background:#ceffe6;
 	height:230px;
 	width:200px;
 	border:solid silver 2px;
@@ -180,7 +179,7 @@ footer{
 	border-radius:5px;
 }
 #slc .rare{
-	background:gold;
+	background:#ceffe6;
 	height:230px;
 	width:200px;
 	margin-left: 40px;
@@ -190,7 +189,7 @@ footer{
 	border-radius:5px;
 }
 #slc .epic{
-	background:gold;
+	background:#ceffe6;
 	height:230px;
 	width:200px;
 	margin-left: 40px;
@@ -208,6 +207,163 @@ footer{
 }
 #oli{
 	grid-area:foot;
+	background-color:palegreen;
+	border-top:solid lightgreen 2px;
+	text-align:center;
+}
+.kurisu{
+	margin-top:95px;
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows:0.8fr 16fr 1fr;
+	grid-template-areas:
+	"makise"
+	"nakano"
+	"uesugi";
+}
+#okabe{
+	grid-area:makise;
+	background-color:aliceblue;
+	border-bottom:solid grey 2px;
+}
+#okabe .rintaro{
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+}
+#okabe .rinatro li{
+	list-style:none;
+}
+#miku{
+	grid-area: nakano;
+	background-color: mintcream;
+}
+#miku{
+	display: grid;
+	grid-template-columns: 0.3fr 1fr;
+	grid-template-rows: 1fr 3fr;
+	grid-template-areas: 
+	"nino nino"
+	"ichika itsuki";
+}
+#miku .miku1{
+    grid-area: nino;
+}
+#miku .nischal{
+	float: left;
+	margin-top: 20px;
+	background:#ceffe6;
+	height:160px;
+	width:140px;
+	border:solid silver 2px;
+	margin-left:40px;
+	text-align:center;
+	color:red;
+	border-radius:5px;
+}
+#miku .tamang{
+	float: left;
+	margin-top: 3.5rem;
+	margin-left:7rem;
+	font-size: 18px;
+}
+#miku .miku2{
+   grid-area: ichika;
+   border-right:solid 2px silver;
+   border-top:solid 2px silver;  
+   background-color: darkviolet;
+   color: white;
+}
+#miku .joro{
+	font-weight: normal;
+	padding-left: 1rem;
+	font-size: 25px;
+}
+#miku .sansoquin{
+	height:3rem;
+	padding-top: 0.5rem;
+	padding-left: 1rem;
+	background-color: purple;
+}
+#miku .holes{
+	height:3rem;
+	padding-top: 0.5rem;
+	padding-left: 1rem;
+	background-color: purple;	
+}
+#miku .miku3{
+	grid-area: itsuki;
+}
+#miku .sumire{
+	border-bottom: solid silver 2px;
+	border-top: solid silver 2px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+#miku .mon{
+	float: left;
+	padding-left: 15px;
+	width:10rem;
+}
+#miku .biu{
+	float: left;
+}
+#miku .dator{
+	font-weight: bold;
+	list-style: none;
+}
+#miku .girl{
+	clear: left;
+	float: left;
+	padding-left: 15px;
+	width:10rem;
+}
+#miku .man{
+	float: left;
+}
+#miku .valid{
+	font-weight: bold;
+	list-style: none;	
+}
+#miku .xquest{
+    clear:left;
+    border-bottom: solid silver 2px;
+    border-top: solid silver 2px;
+	margin:20px 15px 0px 15px;
+	font-size: 20px;
+}
+#miku .berry{
+    float:left;
+    padding-left: 15px;
+	width:10rem;
+}
+#miku .cherry{
+    float:left;
+    margin-left:1.5rem;
+}
+#miku .terry{
+	clear: left;
+    float:left;
+    padding-left: 15px;
+	width:10rem;
+}
+#miku .ferry{
+    float:left;
+    margin-left:1.5rem;
+}
+#miku .scar{
+	clear: left;
+    float:left;
+    padding-left: 15px;
+	width:10rem;
+}
+#miku .m4{
+    float:left;
+    margin-left:1.5rem;
+}
+
+#fuutaro{
+	grid-area:uesugi;
 	background-color:palegreen;
 	border-top:solid lightgreen 2px;
 	text-align:center;
@@ -283,4 +439,14 @@ footer{
     .layout{
 		margin-top:95px;
 	}
+	#miku .nischal{
+    	margin-top:0px;
+    	margin-left:0px;
+    	height: 120px;
+    	width: 90px;
+    }
+    #miku .tamang{
+    	font-size: 15px;
+    	margin:1rem;
+    }
 }

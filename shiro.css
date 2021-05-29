@@ -231,7 +231,7 @@ footer{
 	justify-content: space-around;
 	align-items: center;
 }
-#okabe .rinatro li{
+#okabe .rintaro li{
 	list-style:none;
 }
 #miku{
@@ -361,9 +361,101 @@ footer{
     float:left;
     margin-left:1.5rem;
 }
-
 #fuutaro{
 	grid-area:uesugi;
+	background-color:palegreen;
+	border-top:solid lightgreen 2px;
+	text-align:center;
+}
+.freeze{
+	margin-top:95px;
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows:0.8fr 8fr 1fr;
+	grid-template-areas:
+	"star"
+	"final"
+	"foor";
+}
+#pana{
+    grid-area:star;
+	background-color:aliceblue;
+	border-bottom:solid grey 2px;
+}
+#pana .cal{
+	text-align: center;
+	font-size: 20px;
+}
+#sonic{
+    grid-area:final;
+	background-color:mintcream;
+}
+#sonic{
+    display: grid;
+	grid-template-columns: 1.4fr 3fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: 
+	"seiya megami"
+}
+#sonic .tape1{
+	grid-area:seiya;
+	background-color:#151B8D;
+	color: white;
+	border:solid;
+	border-radius: 5px;
+	padding-left: 2rem;
+	padding-top: 0.5rem;
+}
+.tape1 tr td:first-child{
+	padding-right:3rem;
+}
+tr td{
+	padding-top: 1rem;
+}
+#sonic .tape2{
+	grid-area: megami;
+	padding: 2rem;
+	background-color: white;
+    border:solid white;
+	border-radius:5px;
+}
+#sonic .smart{
+	display: flex;
+	justify-content: space-between;
+}
+.smart .smart1{
+	flex-basis: 45%;
+}
+#sonic input{
+	width: 100%;
+	margin-bottom: 1.5rem;
+	box-sizing: border-box;
+	border:none;
+	border-bottom: solid 2px silver;
+	outline: none;
+}
+#sonic .bake{
+	display: flex;
+	width:45%;
+}
+#sonic textarea{
+	width: 100%;
+}
+#sonic label{
+	margin-bottom: 5px;
+	display: block;
+	color: navy;
+}
+#sonic .hype{
+	width: 120px;
+    height: 40px;
+    background-color:#151B8D;
+    border:none;
+    border-radius: 4px;
+    color: white;
+}
+#cello{
+	grid-area:foor;
 	background-color:palegreen;
 	border-top:solid lightgreen 2px;
 	text-align:center;
@@ -373,6 +465,27 @@ footer{
     	display: grid;
     	padding: 16px;
     	grid-template-columns: repeat(1, 1fr);
+    }
+	#sonic{
+    	display: grid;
+    	padding: 16px;
+    	grid-template-columns:1fr;
+    	grid-template-rows: 1fr 2fr;
+    	grid-template-areas: 
+    	"seiya"
+    	"megami"
+    }
+    #sonic .tape1{
+    	grid-area: seiya;
+    }
+    #sonic .tape2{
+    	grid-area: megami;
+    }
+    .tape1 tr td:first-child{
+	padding-right:1rem;
+    }
+    tr td{
+	padding-top: 0.5rem;
     }	
     nav .aka {
 		float: none;

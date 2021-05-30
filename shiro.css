@@ -2,6 +2,7 @@ body{
     background-color:white;
     margin:0;
     padding: 0;
+	font-family: 'Alegreya Sans', sans-serif;
 }
 nav{
 	background-color:black;
@@ -46,6 +47,7 @@ nav .whole a{
 	font-weight: bold;
 	color: white;
 	text-decoration: none;
+	font-family: 'Alegreya Sans', sans-serif;
 }
 nav .whole li a:hover{
 	background-color:green;
@@ -73,7 +75,7 @@ nav .burgericon span{
 	margin-top:95px;
 	display:grid;
 	grid-template-columns:1fr;
-	grid-template-rows:0.8fr 8fr 1fr;
+	grid-template-rows:0.5fr 7.75fr 0.8fr;
 	grid-template-areas:
 	"sidebar"
 	"content"
@@ -125,6 +127,16 @@ nav .burgericon span{
     margin:4px 2px;
     cursor:pointer;
 	border-radius: 8px;
+	animation-name:huhu;
+	animation-duration:4s;
+	animation-iteration-count: infinite;
+}
+@keyframes huhu{
+	0%{background-color:green;}
+	25%{background-color:lime;}
+	50%{background-color:lightblue;}
+	75%{background-color:skyblue;}
+	100%{background-color:navy;}
 }
 footer{
 	grid-area:footer;
@@ -136,9 +148,10 @@ footer{
 	margin-top:95px;
 	display:grid;
 	grid-template-columns:1fr;
-	grid-template-rows:0.8fr 8fr 1fr;
+	grid-template-rows:0.8fr 9fr 9fr 1fr;
 	grid-template-areas:
 	"bar"
+	"place"
 	"init"
 	"foot";
 }
@@ -155,6 +168,87 @@ footer{
 #view .kirito li{
 	list-style:none;
 }
+#dle{
+	grid-area: place;
+	background-color: mintcream;
+}
+#dle h4{
+	font-size:30px;
+	font-weight:bold;
+	word-spacing:4px;
+	float:left;
+	margin:100px 0px 0px 50px;
+}
+#dle p{
+	float:left;
+	margin:30px 50px 10px 50px;
+}
+#dle .ppk{
+	margin:20px 0px 0px 100px;
+}
+#dle{
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+#dle .vidd{
+	background-color: white;
+}
+#dle .orig{
+	margin:60px 0px 0px 200px;
+	background-color: navy;
+	width: 15rem;
+	color: white;
+	height: 20rem;
+	border:none;
+	border-radius: 5px;
+	box-shadow: 2px 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#dle .hokk{
+	text-align: center;
+	margin:4rem 2rem 0px 2rem ;
+}
+#dle .hisss{
+	background-color: #6960EC;
+	margin-top: 2rem;
+	margin-left: 4rem;
+	width:7rem;
+	height: 3rem;
+	border:none;
+	border-radius: 4px;
+	color: white;
+}
+#dle .orig:hover{
+	box-shadow: 3px 3px lime;
+}
+#dle .hisss:hover{
+	box-shadow: 2px 2px lime;
+}
+#dle .ourbtn{
+	float:left;
+	font-style:italic;
+	background-color:green;
+	border:none;
+    color: white;
+    padding:15px 32px;
+    text-align:center;
+    text-decoration:none;
+    display:inline-block;
+	margin-left:100px;
+    font-size:16px;
+    margin:4px 2px;
+    cursor:pointer;
+	border-radius: 8px;
+	animation-name:buhu;
+	animation-duration:4s;
+	animation-iteration-count: infinite;	
+}
+@keyframes buhu{
+	0%{background-color:green;}
+	25%{background-color:lime;}
+	50%{background-color:lightblue;}
+	75%{background-color:skyblue;}
+	100%{background-color:navy;}
+}
 #slc{
 	grid-area:init;
 	background-color:mintcream;
@@ -169,34 +263,37 @@ footer{
 	background-color: mintcream;
 }
 #slc .unique{
-	background:#ceffe6;
+	background:navy;
 	height:230px;
 	width:200px;
-	border:solid silver 2px;
+	border:none;
 	margin-left:40px;
 	text-align:center;
-	color:red;
+	color:white;
 	border-radius:5px;
+	box-shadow: 2px 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #slc .rare{
-	background:#ceffe6;
+	background:navy;
 	height:230px;
 	width:200px;
 	margin-left: 40px;
-	border:solid silver 2px;
+	border:none;
 	text-align:center;
-	color:red;
+	color:white;
 	border-radius:5px;
+	box-shadow: 2px 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #slc .epic{
-	background:#ceffe6;
+	background:navy;
 	height:230px;
 	width:200px;
 	margin-left: 40px;
-	border:solid silver 2px;
+	border:none;
 	text-align:center;
-	color:red;
-	border-radius:5px;	
+	color:white;
+	border-radius:5px;
+	box-shadow: 2px 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
 }
 #slc h1,h2,h3{
 	font-size: 20px;
@@ -231,7 +328,7 @@ footer{
 	justify-content: space-around;
 	align-items: center;
 }
-#okabe .rinatro li{
+#okabe .rintaro li{
 	list-style:none;
 }
 #miku{
@@ -258,8 +355,14 @@ footer{
 	border:solid silver 2px;
 	margin-left:40px;
 	text-align:center;
-	color:red;
+	color:white;
 	border-radius:5px;
+	animation-name:juju;
+	animation-duration:5s;
+}
+@keyframes juju{
+	from{background-color:#ceffe6;}
+    to{background-color:navy;}
 }
 #miku .tamang{
 	float: left;
@@ -271,7 +374,7 @@ footer{
    grid-area: ichika;
    border-right:solid 2px silver;
    border-top:solid 2px silver;  
-   background-color: darkviolet;
+   background-color: navy;
    color: white;
 }
 #miku .joro{
@@ -361,18 +464,148 @@ footer{
     float:left;
     margin-left:1.5rem;
 }
-
 #fuutaro{
 	grid-area:uesugi;
 	background-color:palegreen;
 	border-top:solid lightgreen 2px;
 	text-align:center;
 }
+.freeze{
+	margin-top:95px;
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows:0.5fr 7.75fr 0.8fr;
+	grid-template-areas:
+	"star"
+	"final"
+	"foor";
+}
+#pana{
+    grid-area:star;
+	background-color:aliceblue;
+	border-bottom:solid grey 2px;
+}
+#pana .cal{
+	text-align: center;
+	font-size: 20px;
+}
+#sonic{
+    grid-area:final;
+	background-color:mintcream;
+}
+#sonic{
+    display: grid;
+	grid-template-columns: 1.4fr 3fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: 
+	"seiya megami"
+}
+#sonic .tape1{
+	grid-area:seiya;
+	background-color:#151B8D;
+	color: white;
+	border:solid;
+	border-radius: 5px;
+	padding-left: 2rem;
+	padding-top: 0.5rem;
+}
+.tape1 tr td:first-child{
+	padding-right:3rem;
+}
+tr td{
+	padding-top: 1rem;
+}
+#sonic .tape2{
+	grid-area: megami;
+	padding: 2rem;
+	background-color: white;
+    border:solid white;
+	border-radius:5px;
+}
+#sonic .smart{
+	display: flex;
+	justify-content: space-between;
+}
+.smart .smart1{
+	flex-basis: 45%;
+}
+#sonic input{
+	width: 100%;
+	margin-bottom: 1.5rem;
+	box-sizing: border-box;
+	border:none;
+	border-bottom: solid 2px silver;
+	outline: none;
+}
+#sonic .bake{
+	display: flex;
+	width:45%;
+}
+#sonic textarea{
+	width: 100%;
+}
+#sonic label{
+	margin-bottom: 5px;
+	display: block;
+	color: navy;
+}
+#sonic .hype{
+	width: 120px;
+    height: 40px;
+    background-color:#151B8D;
+    border:none;
+    border-radius: 4px;
+    color: white;
+}
+#cello{
+	grid-area:foor;
+	background-color:palegreen;
+	border-top:solid lightgreen 2px;
+	text-align:center;
+}
 @media screen and (max-width : 600px){
+	#dle{
+		display: grid;
+		grid-template-columns: repeat(1,1fr);
+	}
     #slc{
     	display: grid;
     	padding: 16px;
     	grid-template-columns: repeat(1, 1fr);
+    }
+    #view{
+    	height:50%;
+    }
+	#dle h4{
+		margin:1rem;
+		font-size: 20px;
+	}
+	#dle p{
+	    margin:1rem;
+	}
+	#dle .orig{
+        margin:0px 2rem 0px 2rem;
+	}
+	#sonic{
+    	display: grid;
+    	padding: 16px;
+    	grid-template-columns:1fr;
+    	grid-template-rows: 1fr 2fr;
+    	grid-template-areas: 
+    	"seiya"
+    	"megami"
+    }
+    #sonic .tape1{
+    	grid-area: seiya;
+    }
+    #sonic .tape2{
+    	grid-area: megami;
+    }
+    .tape1 tr td:first-child{
+	padding-right:1rem;
+    }
+    tr td{
+	padding-top: 0.5rem;
     }	
     nav .aka {
 		float: none;

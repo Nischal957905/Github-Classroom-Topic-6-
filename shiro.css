@@ -563,6 +563,290 @@ tr td{
 	border-top:solid lightgreen 2px;
 	text-align:center;
 }
+.ruby{
+	margin-top:95px;
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows:3.2em 33em 33em  3em 30em  3em 30em 30em 38em 3.2em;
+	grid-template-areas:
+	"slayer"
+	"cena"
+	"demigod"
+	"dorphi"
+	"opp"
+	"ghole"
+	"lowkey"
+	"greeny"
+	"refff"
+	"watery";
+}
+#alucard{
+    grid-area: slayer;
+	background-color:aliceblue;
+	border-bottom:solid grey 2px;
+}
+#alucard .miya{
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+}
+#alucard .miya li{
+	list-style: none;
+}
+#john{
+    grid-area: cena;
+    background-color: mintcream;
+    border-bottom:solid grey 2px;
+}
+#john{
+	display: grid;
+	grid-template-columns: 1.4fr 3fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: 
+	"bhrom broom"
+}
+#john .tery{
+    grid-area: bhrom;
+    background-color: navy;
+    color: white;
+}
+#john .terry{
+    grid-area: broom;	
+}
+#john .carr{
+	font-size: 23px;
+	padding-left: 1rem;
+	padding-top: 1rem;
+	text-decoration: underline;
+}
+#john .eter{
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+#john .guarn{
+	margin-top: 2rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+#john .muarn{
+	padding-right: 1rem;
+}
+#john .terry{
+	padding:2rem;
+}
+#john .jarr2,.jarr3{
+	padding-right: 3rem;
+}
+#thor{
+    grid-area: demigod;
+    background-color: mintcream;
+    border-bottom:solid grey 2px;
+}
+#thor{
+	display: grid;
+	grid-template-columns: 1.4fr 3fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: 
+	"acer micro"
+}
+#thor .laske{
+    grid-area: acer;
+    background-color: navy;
+    color: white;
+}
+#thor .laske1{
+	font-size: 24px;
+	font-weight: bold;
+	padding-top: 1rem;
+	padding-left: 1rem;
+	text-decoration: underline;
+}
+#thor .laske2,.laske3,.laske4{
+	padding-left: 1rem;
+	padding-right: .5rem;
+}
+.laske3 tr td:first-child{
+	padding-right:1.5rem;
+	padding-bottom: 1rem;
+}
+#thor .maske{
+	grid-area: micro;
+	padding: 2rem;
+}
+#thor .maske1{
+	font-size: 24px;
+	font-weight: bold;
+}
+.maske3 tr td:first-child{
+	padding-right:2rem;
+}
+.maske3 tr td{
+	padding-bottom:.8rem;
+}
+#dolphinn{
+	grid-area: dorphi;
+	background-color: mintcream;
+}
+#dolphinn .dolphinn1{
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+#thorfinn{
+    grid-area: opp;
+    background-color: mintcream;
+    border-bottom:solid grey 2px;
+}
+#thorfinn{
+	display: grid;
+	grid-gap: 4rem;
+	padding:20px;
+	grid-template-columns: repeat(3, 1fr);
+}
+#thorfinn .dodo1{
+	background:gold;
+	height:300px;
+	width:250px;
+	border:solid silver 2px;
+	margin-left:40px;
+	text-align:center;
+	color:red;
+	border-radius:5px;
+}
+img{
+	width: 95%;
+	height: 48%;
+}
+#thorfinn .dodo2{
+	background:gold;
+	height:300px;
+	width:250px;
+	margin-left: 40px;
+	border:solid silver 2px;
+	text-align:center;
+	color:red;
+	border-radius:5px;
+}
+#thorfinn .dodo3{
+	background:gold;
+	height:300px;
+	width:250px;
+	margin-left: 40px;
+	border:solid silver 2px;
+	text-align:center;
+	color:red;
+	border-radius:5px;	
+}
+#valll{
+	grid-area: ghole;
+	background-color: mintcream;
+}
+#valll .valll1{
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+#lokii{
+    grid-area: lowkey;
+    background-color: mintcream;
+    border-bottom:solid grey 2px; 
+}
+#lokii{
+	display: grid;
+	grid-gap: 4rem;
+	padding:20px;
+	grid-template-columns: repeat(3, 1fr);	
+}
+#lokii .fokii1{
+	background:gold;
+	height:300px;
+	width:250px;
+	border:solid silver 2px;
+	margin-left:40px;
+	text-align:center;
+	color:red;
+	border-radius:5px;
+}
+#lokii .fokii2{
+	background:gold;
+	height:300px;
+	width:250px;
+	margin-left: 40px;
+	border:solid silver 2px;
+	text-align:center;
+	color:red;
+	border-radius:5px;
+}
+#lokii .fokii3{
+	background:gold;
+	height:300px;
+	width:250px;
+	margin-left: 40px;
+	border:solid silver 2px;
+	text-align:center;
+	color:red;
+	border-radius:5px;	
+}
+#refer{
+	grid-area: refff;
+	background-color: mintcream;
+}
+#refer p,li{
+	padding-left: 2rem;
+}
+#refer p{
+	margin-top: 0px;
+}
+#refer .parda{
+	font-size: 24px;
+	text-align: center;
+}
+#vexana{
+    grid-area: greeny;
+    background-color: mintcream;
+}
+#vexana{
+	display: grid;
+	grid-gap: 4rem;
+	padding:20px;
+	grid-template-columns: repeat(3, 1fr);	
+}
+#vexana .dokii1{
+	background:gold;
+	height:300px;
+	width:250px;
+	border:solid silver 2px;
+	margin-left:40px;
+	text-align:center;
+	color:red;
+	border-radius:5px;
+}
+#vexana .dokii2{
+	background:gold;
+	height:300px;
+	width:250px;
+	margin-left: 40px;
+	border:solid silver 2px;
+	text-align:center;
+	color:red;
+	border-radius:5px;
+}
+#vexana .dokii3{
+	background:gold;
+	height:300px;
+	width:250px;
+	margin-left: 40px;
+	border:solid silver 2px;
+	text-align:center;
+	color:red;
+	border-radius:5px;	
+}
+#kadita{
+    grid-area: watery;
+	background-color:palegreen;
+	border-top:solid lightgreen 2px;
+	text-align:center; 
+}
 @media screen and (max-width : 600px){
 	#dle{
 		display: grid;
@@ -606,7 +890,56 @@ tr td{
     }
     tr td{
 	padding-top: 0.5rem;
-    }	
+    }
+    .ruby{
+	margin-top:95px;
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows:3.2em 90em 90em  3em 90em  3em 90em 85em 70em 3.2em;
+	grid-template-areas:
+	"slayer"
+	"cena"
+	"demigod"
+	"dorphi"
+	"opp"
+	"ghole"
+	"lowkey"
+	"greeny"
+	"refff"
+	"watery";
+	}
+	#john{
+    	display: grid;
+    	grid-template-columns:1fr;
+    	grid-template-rows: 1fr 2fr;
+    	grid-template-areas: 
+    	"bhrom"
+    	"broom"
+    }
+    #thor{
+    	display: grid;
+    	padding: 16px;
+    	grid-template-columns:1fr;
+    	grid-template-rows: 1fr 2fr;
+    	grid-template-areas: 
+    	"acer"
+    	"micro"
+    }
+    #thorfinn{
+    	display: grid;
+    	grid-template-columns:repeat(1, 1fr);
+    }
+    #lokii{
+       display: grid;
+       grid-template-columns:repeat(1, 1fr);
+    }
+    #vexana{
+    	display: grid;
+    	grid-template-columns:repeat(1, 1fr);
+    }
+    #refer p,li{
+    	padding: 0px;
+}	
     nav .aka {
 		float: none;
 		width: auto;

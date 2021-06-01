@@ -567,7 +567,7 @@ tr td{
 	margin-top:95px;
 	display:grid;
 	grid-template-columns:1fr;
-	grid-template-rows:3.2em 33em 33em  3em 30em  3em 30em 30em 38em 3.2em;
+	grid-template-rows:3.2em 30em 33em 3em 30em 3em 30em 30em 38em 3.2em;
 	grid-template-areas:
 	"slayer"
 	"cena"
@@ -791,15 +791,13 @@ img{
 	grid-area: refff;
 	background-color: mintcream;
 }
-#refer p,li{
-	padding-left: 2rem;
-}
-#refer p{
-	margin-top: 0px;
-}
 #refer .parda{
 	font-size: 24px;
 	text-align: center;
+}
+#refer .ppaa{
+	padding:2rem;
+	font-size:14px;
 }
 #vexana{
     grid-area: greeny;
@@ -892,8 +890,10 @@ img{
 	padding-top: 0.5rem;
     }
     .ruby{
-	margin-top:95px;
 	display:grid;
+	padding:1px;
+	margin-left:2px;
+	margin-right:2px;
 	grid-template-columns:1fr;
 	grid-template-rows:3.2em 90em 90em  3em 90em  3em 90em 85em 70em 3.2em;
 	grid-template-areas:
@@ -936,10 +936,7 @@ img{
     #vexana{
     	display: grid;
     	grid-template-columns:repeat(1, 1fr);
-    }
-    #refer p,li{
-    	padding: 0px;
-}	
+    }	
     nav .aka {
 		float: none;
 		width: auto;

@@ -7,6 +7,8 @@ body{
 nav{
 	background-color:black;
 }
+/*inline citation for line 13 to 74*/
+/*(MinzCode, 2020)*/
 nav{
 	position: fixed;
 	z-index: 10;
@@ -70,7 +72,7 @@ nav .burgericon span{
 	background-color: gold;
 	border-radius: 3px;
 	transition: all .3s ease-in-out;
-}
+}/*inline citation for line 76 to 85*/   /*(Angela Delise, 2020)*/
 .layout{
 	margin-top:95px;
 	display:grid;
@@ -130,7 +132,7 @@ nav .burgericon span{
 	animation-name:huhu;
 	animation-duration:4s;
 	animation-iteration-count: infinite;
-}
+} /*inline citation for line 135 to 141*/    /*(w3Schools, n.d.)*/ 
 @keyframes huhu{
 	0%{background-color:green;}
 	25%{background-color:lime;}
@@ -188,7 +190,7 @@ footer{
 }
 #dle{
 	display:grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(2, 1fr);  /*(Tyler Potts, 2021)*/
 }
 #dle .vidd{
 	background-color: white;
@@ -201,7 +203,7 @@ footer{
 	height: 20rem;
 	border:none;
 	border-radius: 5px;
-	box-shadow: 2px 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 2px 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  /*(w3Schools, n.d.)*/
 }
 #dle .hokk{
 	text-align: center;
@@ -241,7 +243,7 @@ footer{
 	animation-name:buhu;
 	animation-duration:4s;
 	animation-iteration-count: infinite;	
-}
+}/*inline citation for line 247 to 253*/    /*(w3Schools, n.d.)*/ 
 @keyframes buhu{
 	0%{background-color:green;}
 	25%{background-color:lime;}
@@ -257,7 +259,7 @@ footer{
 	display:grid;
 	grid-gap: 50px;
 	padding:20px;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(3, 1fr);  /*(Tyler Potts, 2021)*/
 }
 #slc .pole{
 	background-color: mintcream;
@@ -271,7 +273,7 @@ footer{
 	text-align:center;
 	color:white;
 	border-radius:5px;
-	box-shadow: 2px 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 2px 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /*(w3Schools, n.d.)*/
 }
 #slc .rare{
 	background:navy;
@@ -282,7 +284,7 @@ footer{
 	text-align:center;
 	color:white;
 	border-radius:5px;
-	box-shadow: 2px 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 2px 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /*(w3Schools, n.d.)*/
 }
 #slc .epic{
 	background:navy;
@@ -293,7 +295,7 @@ footer{
 	text-align:center;
 	color:white;
 	border-radius:5px;
-	box-shadow: 2px 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
+	box-shadow: 2px 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	/*(w3Schools, n.d.)*/
 }
 #slc h1,h2,h3{
 	font-size: 20px;
@@ -307,7 +309,7 @@ footer{
 	background-color:palegreen;
 	border-top:solid lightgreen 2px;
 	text-align:center;
-}
+}/*inline citation for line 312 to 321*/   /*(Angela Delise, 2020)*/
 .kurisu{
 	margin-top:95px;
 	display:grid;
@@ -508,7 +510,7 @@ footer{
 	border-radius: 5px;
 	padding-left: 2rem;
 	padding-top: 0.5rem;
-}
+}/*inline citation for line 512 to 531*/ /*(Easy Tutorials, 2020)*/
 .tape1 tr td:first-child{
 	padding-right:3rem;
 }
@@ -641,7 +643,7 @@ tr td{
     grid-area: demigod;
     background-color: mintcream;
     border-bottom:solid grey 2px;
-}
+}/*inline citation for line 647 to 652*/   /*(Angela Delise, 2020)*/
 #thor{
 	display: grid;
 	grid-template-columns: 1.4fr 3fr;
@@ -888,7 +890,7 @@ img{
     }
     tr td{
 	padding-top: 0.5rem;
-    }
+    }/*inline citation for line 894 to 927*/   /*(Angela Delise, 2020)*/
     .ruby{
 	display:grid;
 	padding:1px;
@@ -927,16 +929,16 @@ img{
     }
     #thorfinn{
     	display: grid;
-    	grid-template-columns:repeat(1, 1fr);
+    	grid-template-columns:repeat(1, 1fr);  /*(Tyler Potts, 2021)*/
     }
     #lokii{
        display: grid;
-       grid-template-columns:repeat(1, 1fr);
+       grid-template-columns:repeat(1, 1fr);  /*(Tyler Potts, 2021)*/
     }
     #vexana{
     	display: grid;
-    	grid-template-columns:repeat(1, 1fr);
-    }	
+    	grid-template-columns:repeat(1, 1fr);  /*(Tyler Potts, 2021)*/
+    }/*inline citation for line 942 to 982*/    /*(MinzCode, 2020)*/	
     nav .aka {
 		float: none;
 		width: auto;
